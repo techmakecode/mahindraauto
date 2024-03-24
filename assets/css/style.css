@@ -1,3 +1,5 @@
+header {left: 0; padding: 15px; position: absolute; top: 0; width: 100%; z-index: 2;}
+header img {width: 100%;}
 .heroBanner {overflow-x: hidden;}
 .heroBanner .swiper-slide {overflow-x: hidden;}
 .heroBanner img, .promoBanner img {width: 100%;}
@@ -125,6 +127,7 @@
     .bannerSwiper .swiper-slide-active .content p span:first-child {margin-left: -50px;}
 }
 @media only screen and (max-width:767px){
+    header {padding: 10px;}
     .container {padding: 0 20px;}
     .heroBanner .content h2, .promoBanner .content h2 {font-size: 20px; padding-bottom: 15px;}
     .heroBanner .content p, .promoBanner .content p {font-size: 10px;}

@@ -7,6 +7,7 @@ ul {margin: 0; padding: 0;}
 li {list-style-type: none;}
 a {background-color: transparent;}
 a:active, a:hover {outline: 0;}
+input:focus-visible {outline: none;}
 b, strong {font-weight: 500;}
 img {border: 0; max-width: 100%;}
 video {width: 100%;}

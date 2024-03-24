@@ -219,14 +219,14 @@ $(document).ready(function () {
     }
 
     // OTP validation
-    var otp = $("#otp").val();
-    if (otp === "") {
-      $("#otp").parents('.field-wrap').find('.errorMsg').fadeIn();
-      isValid = false;
-    }
-    else if (otp != "") {
-      $("#otp").next('.errorMsg').hide();
-    }
+    // var otp = $("#otp").val();
+    // if (otp === "") {
+    //   $("#otp").parents('.field-wrap').find('.errorMsg').fadeIn();
+    //   isValid = false;
+    // }
+    // else if (otp != "") {
+    //   $("#otp").next('.errorMsg').hide();
+    // }
     // If all fields are valid, you can proceed with form submission
     if (isValid) {
       //$(this).parents('.contentFormwrap').hide().next('.successWrap').fadeIn()
@@ -234,7 +234,8 @@ $(document).ready(function () {
       $('.getInTouchForm .errorMsg').hide();
       //alert("Form submitted successfully!");
       $('.popup-overlay, .thankyouPopup').fadeIn();
-      $("#fullname, #email, #contactnumber, #otp").val("");
+      //$("#fullname, #email, #contactnumber, #otp").val("");
+      $("#fullname, #email, #contactnumber").val("");
     }
   });
 
@@ -246,18 +247,8 @@ $(document).ready(function () {
   function isValidEmail(email) {
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
-  }
-  
-    
-  
-  
-  
-  
-  
-  
-  
-      
-  });
+  } 
+});
   
   
   
