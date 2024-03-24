@@ -1,0 +1,38 @@
+html { font-family: "Georama", sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; scroll-behavior: smooth;}
+body {margin: 0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu, section, summary, img {display: block;}
+audio, canvas, progress, video {display: inline-block; vertical-align: baseline;}
+audio:not([controls]) { display: none; height: 0;}
+ul {margin: 0; padding: 0;}
+li {list-style-type: none;}
+a {background-color: transparent;}
+a:active, a:hover {outline: 0;}
+b, strong {font-weight: 500;}
+img {border: 0; max-width: 100%;}
+video {width: 100%;}
+svg:not(:root) {overflow: hidden;}
+button,input,optgroup,select,textarea {color: inherit; font: inherit; margin: 0;}
+button { overflow: visible;}
+button, select { text-transform: none;}
+button, html input[type=button],input[type=reset],input[type=submit] {cursor: pointer;}
+button[disabled],html input[disabled] { cursor: default;}
+button::-moz-focus-inner,input::-moz-focus-inner { border: 0; padding: 0;}
+input { line-height: normal;}
+input[type=checkbox],input[type=radio] { box-sizing: border-box; padding: 0; margin-right: 5px; width: 20px; height: 20px; border-radius: 5px;}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button { height: auto;}
+input[type=search] {box-sizing: content-box;}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration { -webkit-appearance: none;}
+*:-webkit-autofill,*:-webkit-autofill:hover,*:-webkit-autofill:focus,*:-webkit-autofill:active { /* use animation hack, if you have hard styled input */ transition: all 5000s ease-in-out 0s; transition-property: background-color, color; /* if input has one color, and didn't have bg-image use shadow */ -webkit-box-shadow: 0 0 0 1000px #fff inset; box-shadow: 0 0 0 1000px #fff inset; /* text color */ -webkit-text-fill-color: #000; /* font weigth */ font-weight: 500 !important;}
+fieldset { border: 1px solid silver; margin: 0 2px; padding: .35em .625em .75em;}
+legend { border: 0; padding: 0;}
+textarea { overflow: auto;}
+optgroup { font-weight: 700;}
+table { border-collapse: collapse; border-spacing: 0;}
+td,th { padding: 0;}
+::-moz-selection { background: #b3d4fc; text-shadow: none;}
+::selection { background: #b3d4fc; text-shadow: none;}
+*,*:before,*:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; -webkit-tap-highlight-color: transparent;}
+html, body { width: 100%; margin: 0; padding: 0; font-style: normal; background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+h1, h2, h3, h4, h5, h6, p {line-height: 1.2;margin: 0;padding: 0;}
+section {background-color: #101014; position: relative;}
+.container {padding: 0 4.686%;}

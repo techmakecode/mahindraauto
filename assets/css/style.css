@@ -1,0 +1,171 @@
+.heroBanner {overflow-x: hidden;}
+.heroBanner .swiper-slide {overflow-x: hidden;}
+.heroBanner img, .promoBanner img {width: 100%;}
+.heroBanner .content, .promoBanner .content {left: 0; position: absolute; text-align: center; top: 25%; width: 100%;}
+.heroBanner .swiper-pagination-progressbar.swiper-pagination-horizontal {bottom: 64px; left: 4.686%;}
+.heroBanner .swiper-button-wrap {bottom: 50px; height: 40px; position: absolute; right: 4.686%; width: 120px;}
+.heroBanner .swiper-button-wrap .swiper-button-prev, .heroBanner .swiper-button-wrap .swiper-button-next {height: 40px; margin: 0; top: 0; width: 40px;}
+.heroBanner .swiper-button-wrap .swiper-button-prev {left: 0;}
+.heroBanner .swiper-button-wrap .swiper-button-next {right: 0;}
+.heroBanner .swiper-button-wrap .swiper-button-prev::after, .heroBanner .swiper-button-wrap .swiper-button-next::after {content: ''; height: 40px; width: 40px;}
+.heroBanner .swiper-button-wrap .swiper-button-prev::after {background: url('../images/arrow-next.png') 0 0 no-repeat; transform: rotate(180deg);}
+.heroBanner .swiper-button-wrap .swiper-button-next::after {background: url('../images/arrow-next.png') 0 0 no-repeat;}
+.heroBanner .swiper-button-wrap .swiper-button-prev::after, .heroBanner .swiper-button-wrap .swiper-button-next::after {background-size: 100%;}
+
+.promoBanner .content {bottom: 100px; top: auto;}
+.heroBanner .content h2, .promoBanner .content h2 {color: #fff; font-size: 38px; font-weight: 700; line-height: 1.2em; padding-bottom: 20px;}
+.heroBanner .content p, .promoBanner .content p {color: rgba(255, 255, 255, .7); font-size: 14px; font-weight: 600; letter-spacing: 5px; line-height: 1.2em;}
+
+.details {padding: 64px 0;}
+.details h2 {padding-bottom: 20px;}
+.details ul {display: flex; flex-wrap: wrap; gap: 0 64px;}
+.details li {font-family: "Lato", sans-serif;}
+.details li:first-child {width: 100%;}
+.details li span.title {color: #7B7B7B; display: block; font-size: 14px; font-weight: 400; line-height: 1.2em; padding: 0 0 7px;}
+.details li p {color: #fff; font-size: 18px; font-weight: 400; line-height: 1.2em;}
+.details li p.highlight {font-size: 32px; font-weight: 700; padding-bottom: 20px;}
+
+.info {padding: 132px 0;}
+.info .heading {color: #fff; display: block; font-size: 14px; font-weight: 600; letter-spacing: 5px; line-height: 1.2em; padding-bottom: 20px;}
+.info h2 {color: #fff; font-family: "Lato", sans-serif; font-size: 48px; font-weight: 300; line-height: 1.2em; padding-bottom: 25px;}
+.info p {color: rgba(255, 255, 255, .7); font-family: "Lato", sans-serif; font-size: 14px; font-weight: 300; line-height: 1.7em;}
+.heroVideoBanner {overflow-x: hidden;}
+.bannerSwiper {overflow-x: hidden;}
+.bannerSwiper img {width: 100%;}
+.bannerSwiper .content {bottom: 50px; left: 0; position: absolute; width: 100%;}
+.bannerSwiper .content p {color: #fff; font-family: "Lato", sans-serif; font-size: 48px; font-weight: 300; line-height: 1.1em; text-align: center;}
+.bannerSwiper .content p span {display: block; margin-right: 100px; transition: all 1s ease-in-out;}
+.bannerSwiper .content p span:first-child {margin-left: 100px; margin-right: auto;}
+
+.bannerSwiper .swiper-slide-active .content p span {margin-right: -100px}
+.bannerSwiper .swiper-slide-active .content p span:first-child {margin-left: -100px;}
+
+.bannerSwiper .swiper-pagination-progressbar.swiper-pagination-horizontal {bottom: 64px; left: 4.686%; top: auto;}
+.bannerSwiper .swiper-button-wrap {bottom: 50px; height: 40px; position: absolute; right: 4.686%; width: 120px;}
+.bannerSwiper .swiper-button-wrap .swiper-button-prev, .bannerSwiper .swiper-button-wrap .swiper-button-next {height: 40px; margin: 0; top: 0; width: 40px;}
+.bannerSwiper .swiper-button-wrap .swiper-button-prev {left: 0;}
+.bannerSwiper .swiper-button-wrap .swiper-button-next {right: 0;}
+.bannerSwiper .swiper-button-wrap .swiper-button-prev::after, .bannerSwiper .swiper-button-wrap .swiper-button-next::after {content: ''; height: 40px; width: 40px;}
+.bannerSwiper .swiper-button-wrap .swiper-button-prev::after {background: url('../images/arrow-next.png') 0 0 no-repeat; transform: rotate(180deg);}
+.bannerSwiper .swiper-button-wrap .swiper-button-next::after {background: url('../images/arrow-next.png') 0 0 no-repeat;}
+.bannerSwiper .swiper-button-wrap .swiper-button-prev::after, .bannerSwiper .swiper-button-wrap .swiper-button-next::after {background-size: 100%;}
+
+.highlights, .unmissablePresence {overflow-x: hidden; padding: 50px 0;}
+.highlights-slider, .unmissablePresence-slider {position: relative;}
+.highlights h3, .unmissablePresence h3, .getInTouchForm h3, .faqs h3 {color: #fff; font-size: 24px; font-weight: 700; line-height: 1.2em; padding-bottom: 25px;}
+.highlights .content, .unmissablePresence .content {padding: 24px 0;}
+.highlights .content h4 {color: #fff; font-family: "Lato", sans-serif; font-size: 24px; font-weight: 400; letter-spacing: -1px; line-height: 1.2em; padding-bottom: 8px;}
+.highlights .content p {color: rgba(255, 255, 255, .7); font-family: "Lato", sans-serif; font-size: 14px; font-weight: 300; line-height: 1.7em;}
+.highlights .content .hidden-content {display: none;}
+.highlights .content .hidden-content.show-content {display: inline;}
+.highlights .content .btn-show-more {color: rgba(255, 255, 255, .7); font-weight: 600; text-decoration: none; position: relative;}
+.highlights .content .btn-show-more.show::before {content: '..'; cursor: text; font-weight: 300; padding: 0 4px 0 0;}
+.swiper-pagination-progressbar.swiper-pagination-horizontal {background-color: #434343; border-radius: 4px; bottom: -20px; top: auto; width: 120px;}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {background-color: #fff; border-radius: 4px;}
+
+.highlights-slider img, .unmissablePresence img {width: 100%;}
+.unmissablePresence .content p {color: #fff; font-family: "Lato", sans-serif; font-size: 16px; font-weight: 700; line-height: 1.3em;}
+
+.getInTouchForm {margin-top: -1px; padding: 100px 0;}
+.getInTouchForm .fields-row {display: flex; gap: 34px; padding-bottom: 10px;}
+.getInTouchForm .field-wrap, .getInTouchForm .field-wrap input {width: 100%;}
+.getInTouchForm .field-wrap input {background-color: transparent; border: 1px solid #7b7b7b; border-radius: 5px; color: #7b7b7b; font-family: "Lato", sans-serif; font-size: 16px; font-weight: 400; line-height: 1.2em; margin-bottom: 7px; padding: 20px;}
+.getInTouchForm .field-wrap .txt, .getInTouchForm .field-wrap .errorMsg {color: #7b7b7b; display: block; font-family: "Lato", sans-serif; font-size: 12px; font-weight: 400; line-height: 1.4em; padding: 0 0 5px 0px;}
+.getInTouchForm .field-wrap .errorMsg {color: #ff0000; display: none;}
+.getInTouchForm .btn-submit {background-color: #fff; border: 1px solid #fff; border-radius: 30px; color: #000; text-align: center; font-family: "Lato", sans-serif; font-size: 16px; font-weight: 400; line-height: 1.2em; padding: 14px 20px; max-width: 390px; width: 100%;}
+.getInTouchForm .btn-submit .arrow-btn {align-items: center; background: url('../images/arrow-submit.svg') 0 0 no-repeat; display: inline-flex; height: 32px; padding: 0 0 0 40px;}
+
+.faqs {padding: 64px 0;}
+.faqs .accordionWrap h5 {border-top: .5px solid rgba(255, 255, 255, .3); color: #fff; font-family: "Lato", sans-serif; font-size: 18px; font-weight: 400; line-height: 1.2em; padding: 30px 40px 30px 0; position: relative;}
+.faqs .accordionWrap h5:before {background-color: #fff; content: ''; height: 22px; position: absolute; right: 10px; top: 33px; transition: all .5s ease-in-out; width: 1px;}
+.faqs .accordionWrap h5:after {background-color: #fff; content: ''; height: 1px; position: absolute; right: 0px; top: 43px; width: 22px;}
+.faqs .accordionWrap h5.active:before {transform: rotate(270deg);}
+
+.faqs .accordionWrap > h5:first-child {border-top: none;}
+.faqs .accordionWrap .accordioncontent {display: none; padding: 0 0 30px;}
+.faqs .accordionWrap p {color: rgba(255, 255, 255, .7); font-family: "Lato", sans-serif; font-size: 16px; font-weight: 300; line-height: 1.7em;}
+.faqs .accordionWrap .hidden-faqs {display: none;}
+.faqs .btn-view-all {background-color: transparent; border: 1px solid #fff; border-radius: 30px; color: #fff; text-align: center; font-family: "Lato", sans-serif; font-size: 16px; font-weight: 400; line-height: 1.2em; padding: 14px 20px;}
+.faqs .btn-view-all .arrow-btn {align-items: center; background: url('../images/arrow-white.svg') 0 0 no-repeat; display: inline-flex; height: 32px; padding: 0 0 0 40px;}
+
+.popup-overlay {background-color: rgba(0, 0, 0, .8); display: none; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 998;}
+
+.thankyouPopup {background-color: #262626; border-radius: 10px; display: none; left: 50%; max-width: 390px; padding: 30px 34px 34px; position: fixed; text-align: center; top: 50%; transform: translate(-50%, -50%); width: 90%; z-index: 999;}
+.thankyouPopup .btn-close {height: 24px; position: absolute; right: 14px; top: 18px; width: 24px; z-index: 1;}
+.thankyouPopup .btn-close:before, .thankyouPopup .btn-close:after {background-color: #fff; content: ''; height: 1px; left: 0; position: absolute; top: 10px; transform: rotate(45deg); width: 100%;}
+.thankyouPopup .btn-close:after {transform: rotate(-45deg);}
+.thankyouPopup h4 {background: url('../images/icon-congrats.png') center 0 no-repeat; color: #5AB548; font-size: 31px; font-weight: 700; line-height: 1.2em; padding: 70px 0 20px; text-transform: uppercase;}
+.thankyouPopup p {color: #fff; font-family: "Lato", sans-serif; font-size: 18px; font-weight: 400; line-height: 1.4em; padding: 0 10px;}
+.thankyouPopup p span {color: #c4c4c4; display: block; font-size: 14px; padding-top: 10px;}
+.thankyouPopup .btn-done {background-color: #fff; border: 1px solid #fff; border-radius: 30px; color: #000; text-align: center; font-family: "Lato", sans-serif; font-size: 16px; font-weight: 400; margin-top: 64px; line-height: 1.2em; padding: 14px 20px; width: 100%;}
+.thankyouPopup .btn-done .arrow-btn {align-items: center; background: url('../images/arrow-submit.svg') 0 0 no-repeat; display: inline-flex; height: 32px; padding: 0 0 0 40px;}
+.btn-video {cursor: pointer; position: relative;}
+.btn-video:before {background: url('../images/btn-play.png') 0 0 no-repeat; content: ''; height: 34px; left: 50%; position: absolute; top:50%; transform: translate(-50%, -50%); width: 34px;}
+.videoPopup {background-color: #262626; border-radius: 10px; display: none; left: 50%; max-height: 100vh; max-width: 1000px; padding: 10px; position: fixed; text-align: center; top: 50%; transform: translate(-50%, -50%); width: 90%; z-index: 999;}
+.videoPopup .btn-close {height: 24px; position: absolute; right: 14px; top: 18px; width: 24px; z-index: 1;}
+.videoPopup .btn-close:before, .videoPopup .btn-close:after {background-color: #fff; content: ''; height: 1px; left: 0; position: absolute; top: 10px; transform: rotate(45deg); width: 100%;}
+.videoPopup .btn-close:after {transform: rotate(-45deg);}
+
+
+@media only screen and (max-width:1024px){
+    .getInTouchForm .fields-row {flex-wrap: wrap; gap: 0; justify-content: space-between;}
+    .getInTouchForm .field-wrap {padding-bottom: 10px; width: 48%;}
+}
+@media only screen and (max-width:1023px){
+    .bannerSwiper .content {bottom: 70px;}
+    .bannerSwiper .content p {font-size: 36px;}
+    .bannerSwiper .swiper-pagination-progressbar.swiper-pagination-horizontal {bottom: 32px; left: 20px;}
+    .bannerSwiper .swiper-button-wrap {bottom: 16px; height: 28px; right: 20px; width: 80px;}
+    .bannerSwiper .swiper-button-wrap .swiper-button-prev, .bannerSwiper .swiper-button-wrap .swiper-button-next, .bannerSwiper .swiper-button-wrap .swiper-button-prev::after, .bannerSwiper .swiper-button-wrap .swiper-button-next::after {height: 28px; width: 28px;}
+    .bannerSwiper .swiper-button-wrap .swiper-button-prev::after, .bannerSwiper .swiper-button-wrap .swiper-button-next::after {background-size: 100%;}
+    .heroVideoBanner video{height: 500px; left: 50%; position: relative; transform: translateX(-50%); width: auto;}
+    .bannerSwiper .content p span:first-child {margin-left: 50px;}
+    .bannerSwiper .content p span {margin-right: 50px;}
+    .bannerSwiper .swiper-slide-active .content p span {margin-right: -50px}
+    .bannerSwiper .swiper-slide-active .content p span:first-child {margin-left: -50px;}
+}
+@media only screen and (max-width:767px){
+    .container {padding: 0 20px;}
+    .heroBanner .content h2, .promoBanner .content h2 {font-size: 20px; padding-bottom: 15px;}
+    .heroBanner .content p, .promoBanner .content p {font-size: 10px;}
+    .heroBanner video{height: 650px; left: 50%; position: relative; transform: translateX(-50%); width: auto;}
+    .heroBanner .swiper-pagination-progressbar.swiper-pagination-horizontal {bottom: 32px; left: 20px;}
+    .heroBanner .swiper-button-wrap {bottom: 24px; height: 28px; right: 20px; width: 80px;}
+
+    .heroBanner .swiper-button-wrap .swiper-button-prev, .heroBanner .swiper-button-wrap .swiper-button-next, .heroBanner .swiper-button-wrap .swiper-button-prev::after, .heroBanner .swiper-button-wrap .swiper-button-next::after {height: 28px; width: 28px;}
+    .heroBanner .swiper-button-wrap .swiper-button-prev::after, .heroBanner .swiper-button-wrap .swiper-button-next::after {background-size: 100%;}
+
+    .bannerSwiper .content p {font-size: 28px;}
+    .details ul {gap: 0;}
+    .details li {padding-bottom: 15px; width: 50%;}
+    .details li span.title {font-size: 12px;}
+    .details li p {font-size: 16px;}
+    .details li p.highlight {font-size: 24px; padding-bottom: 0;}
+    .info {padding: 60px 0;}
+    .info p br {display: none;}
+    .info .heading {font-size: 10px;}
+    .info h2 {font-size: 28px; padding-bottom: 20px;}
+    .info p {font-size: 12px;}
+    
+    .swiper-pagination-progressbar.swiper-pagination-horizontal {width: 80px; height: 2px;}
+    
+
+    .highlights h3, .unmissablePresence h3, .getInTouchForm h3, .faqs h3 {font-size: 20px;}
+    .highlights .content p {font-size: 12px; line-height: 1.5em;}
+    .unmissablePresence .content p {font-size: 14px;}
+    .promoBanner .content {bottom: 60px;}
+    .getInTouchForm {padding: 60px 0;}
+    .getInTouchForm .field-wrap {width: 100%;}
+    .getInTouchForm .field-wrap input {font-size: 14px; margin-bottom: 5px; padding: 16px;}
+    .getInTouchForm .btn-submit {font-size: 14px; padding: 9px 15px;}
+
+    .faqs .accordionWrap h5 {font-size: 16px; padding: 24px 30px 24px 0;}
+    .faqs .accordionWrap h5:before {height: 18px; right: 8px; top: 27px;}
+    .faqs .accordionWrap h5:after {top: 35px; width: 18px;}
+    .faqs .btn-view-all {font-size: 14px; padding: 9px 15px;}
+    .thankyouPopup {padding: 16px;}
+    .thankyouPopup h4 {font-size: 26px;}
+    .thankyouPopup p {font-size: 16px;}
+    .thankyouPopup p span {font-size: 12px;}
+    .thankyouPopup .btn-done {font-size: 14px; margin-top: 45px; padding: 9px 15px;}
+}
