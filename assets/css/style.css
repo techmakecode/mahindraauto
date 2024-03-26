@@ -1,18 +1,68 @@
 header {left: 0; padding: 15px; position: absolute; top: 0; width: 100%; z-index: 2;}
 header img {width: 100%;}
-.heroBanner {overflow-x: hidden;}
-.heroBanner .swiper-slide {overflow-x: hidden;}
-.heroBanner img, .promoBanner img {width: 100%;}
+.heroBanner, .heroVideoBanner {max-height: 90vh; overflow-x: hidden;}
+.heroBanner .swiper-slide, .heroVideoBanner .swiper-slide {overflow-x: hidden;}
+.heroBanner img, .promoBanner img, .heroVideoBanner video {width: 100%;}
 .heroBanner .content, .promoBanner .content {left: 0; position: absolute; text-align: center; top: 25%; width: 100%;}
-.heroBanner .swiper-pagination-progressbar.swiper-pagination-horizontal {bottom: 64px; left: 4.686%;}
-.heroBanner .swiper-button-wrap {bottom: 50px; height: 40px; position: absolute; right: 4.686%; width: 120px;}
-.heroBanner .swiper-button-wrap .swiper-button-prev, .heroBanner .swiper-button-wrap .swiper-button-next {height: 40px; margin: 0; top: 0; width: 40px;}
-.heroBanner .swiper-button-wrap .swiper-button-prev {left: 0;}
-.heroBanner .swiper-button-wrap .swiper-button-next {right: 0;}
-.heroBanner .swiper-button-wrap .swiper-button-prev::after, .heroBanner .swiper-button-wrap .swiper-button-next::after {content: ''; height: 40px; width: 40px;}
-.heroBanner .swiper-button-wrap .swiper-button-prev::after {background: url('../images/arrow-next.png') 0 0 no-repeat; transform: rotate(180deg);}
-.heroBanner .swiper-button-wrap .swiper-button-next::after {background: url('../images/arrow-next.png') 0 0 no-repeat;}
-.heroBanner .swiper-button-wrap .swiper-button-prev::after, .heroBanner .swiper-button-wrap .swiper-button-next::after {background-size: 100%;}
+.heroBanner .swiper-pagination-progressbar.swiper-pagination-horizontal, .heroVideoBanner .swiper-pagination-progressbar.swiper-pagination-horizontal {bottom: 64px; left: 4.686%;}
+.heroBanner .swiper-button-wrap, .heroVideoBanner .swiper-button-wrap {bottom: 50px; height: 40px; position: absolute; right: 4.686%; width: 120px;}
+.heroBanner .swiper-button-wrap .swiper-button-prev, .heroBanner .swiper-button-wrap .swiper-button-next, .heroVideoBanner .swiper-button-wrap .swiper-button-prev, .heroVideoBanner .swiper-button-wrap .swiper-button-next {height: 40px; margin: 0; top: 0; width: 40px;}
+.heroBanner .swiper-button-wrap .swiper-button-prev, .heroVideoBanner .swiper-button-wrap .swiper-button-prev {left: 0;}
+.heroBanner .swiper-button-wrap .swiper-button-next, .heroVideoBanner .swiper-button-wrap .swiper-button-next {right: 0;}
+.heroBanner .swiper-button-wrap .swiper-button-prev::after, .heroBanner .swiper-button-wrap .swiper-button-next::after, .heroVideoBanner .swiper-button-wrap .swiper-button-prev::after, .heroVideoBanner .swiper-button-wrap .swiper-button-next::after {content: ''; height: 40px; width: 40px;}
+.heroBanner .swiper-button-wrap .swiper-button-prev::after, .heroVideoBanner .swiper-button-wrap .swiper-button-prev::after {background: url('../images/arrow-next.png') 0 0 no-repeat; transform: rotate(180deg);}
+.heroBanner .swiper-button-wrap .swiper-button-next::after, .heroVideoBanner .swiper-button-wrap .swiper-button-next::after {background: url('../images/arrow-next.png') 0 0 no-repeat;}
+.heroBanner .swiper-button-wrap .swiper-button-prev::after, .heroBanner .swiper-button-wrap .swiper-button-next::after, .heroVideoBanner .swiper-button-wrap .swiper-button-prev::after, .heroVideoBanner .swiper-button-wrap .swiper-button-next::after {background-size: 100%;}
+.animatedArrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+    transform: scale(.4);
+    z-index: 2;
+  }
+  
+  .animatedArrows path {
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 1px;  
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+  }
+  
+  @keyframes arrow
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  @-webkit-keyframes arrow /*Safari and Chrome*/
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  .animatedArrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  }
+  
+  .animatedArrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  }
+  
+  .animatedArrows path.a3 { 
+    animation-delay:0s;
+    -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  }
+
 
 .promoBanner .content {bottom: 100px; top: auto;}
 .heroBanner .content h2, .promoBanner .content h2 {color: #fff; font-size: 38px; font-weight: 700; line-height: 1.2em; padding-bottom: 20px;}
@@ -69,13 +119,249 @@ header img {width: 100%;}
 .unmissablePresence .content p {color: #fff; font-family: "Lato", sans-serif; font-size: 16px; font-weight: 700; line-height: 1.3em;}
 
 .getInTouchForm {margin-top: -1px; padding: 100px 0;}
-.getInTouchForm .fields-row {display: flex; gap: 34px; padding-bottom: 10px;}
-.getInTouchForm .field-wrap, .getInTouchForm .field-wrap input {width: 100%;}
-.getInTouchForm .field-wrap input {background-color: transparent; border: 1px solid #7b7b7b; border-radius: 5px; color: #7b7b7b; font-family: "Lato", sans-serif; font-size: 16px; font-weight: 400; line-height: 1.2em; margin-bottom: 7px; padding: 20px;}
+.getInTouchForm .fields-row {display: flex; flex-wrap: wrap; justify-content: space-between; padding-bottom: 10px; position: relative; width: 75%; z-index: 2;}
+.getInTouchForm .field-wrap {padding-bottom: 32px; position: relative; width: 30.5%;}
+.getInTouchForm .field-wrap.select2Part {width: 65%;} 
+.getInTouchForm .field-wrap input {width: 100%;}
+.getInTouchForm .field-wrap input {background-color: transparent; border: 1px solid #7b7b7b; border-radius: 5px; color: #fff; font-family: "Lato", sans-serif; font-size: 16px; font-weight: 400; height: 62px; line-height: 1.2em; margin-bottom: 7px; padding: 20px;}
+.getInTouchForm .field-wrap input#contactnumber {padding-left: 45px; padding-right: 70px;}
 .getInTouchForm .field-wrap .txt, .getInTouchForm .field-wrap .errorMsg {color: #7b7b7b; display: block; font-family: "Lato", sans-serif; font-size: 12px; font-weight: 400; line-height: 1.4em; padding: 0 0 5px 0px;}
 .getInTouchForm .field-wrap .errorMsg {color: #ff0000; display: none;}
-.getInTouchForm .btn-submit {background-color: #fff; border: 1px solid #fff; border-radius: 30px; color: #000; text-align: center; font-family: "Lato", sans-serif; font-size: 16px; font-weight: 400; line-height: 1.2em; padding: 14px 20px; max-width: 390px; width: 100%;}
+.getInTouchForm .btn-submit {background-color: #fff; border: 1px solid #fff; border-radius: 30px; color: #000; display: inline-block; text-align: center; font-family: "Lato", sans-serif; font-size: 16px; font-weight: 400; line-height: 1.2em; padding: 14px 20px; max-width: 390px; width: 100%;}
 .getInTouchForm .btn-submit .arrow-btn {align-items: center; background: url('../images/arrow-submit.svg') 0 0 no-repeat; display: inline-flex; height: 32px; padding: 0 0 0 40px;}
+.field-wrap .verify {border-bottom: 1px solid #fff; color: #fff; font-family: 'Lato'; position: absolute; right: 15px; text-decoration: none; top: 20px;}
+
+.field-wrap label {background-color: #101014; font-family: 'Lato';
+    position: absolute;
+    top: 23px; 
+    left: 15px;
+    text-align: left;
+    display: inline-block;
+    padding: 0 4px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.6);
+    margin: 0px auto;
+    cursor: text;
+    transition: all .15s ease-in-out; z-index: 2;
+}
+/* Custom Select - Starts */
+.select2-container {width: 100% !important;}
+.select2Part .floating-label{
+    opacity: 0;
+}
+.select2Part.focused .floating-label{
+    top:-5px;
+    opacity: 1;
+}
+.select2Part.focused .select2-container--default .select2-selection--single .select2-selection__rendered{
+    padding-top: 10px;
+}
+.select2-container--default .select2-selection--single{
+    background-color: #101014;
+    border: 1px solid #7b7b7b;
+    height: 62px;
+}
+.select2-container--focus.select2-container--default .select2-selection--single{
+    background-color: #101014;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 40px;
+    transition: 240ms;
+    padding-right: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 7px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 53px;
+    right: 15px;
+    transition: 240ms;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: rgb(236 238 241);
+    color: #4a494a;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border: none;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9Ii00NzMgMjc3IDEyIDgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTQ3MyAyNzcgMTIgODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6IzhBOTNBNjt9DQo8L3N0eWxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTS00NzEuNiwyNzcuM2w0LjYsNC42bDQuNi00LjZsMS40LDEuNGwtNiw2bC02LTZMLTQ3MS42LDI3Ny4zeiIvPg0KPC9zdmc+DQo=') no-repeat 0 0;
+    width: 12px;
+    height: 8px;
+    background-size: 100% 100%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #5A8DEE;
+    color: #fff;
+}  
+.select2-container--default .select2-results__option:last-child{
+    border-radius: 0px 0px 4px 4px;
+}
+.select2-container--default .select2-selection--single{
+    border-radius: .267rem;
+}
+.select2-container .select2-selection--single .select2-selection__rendered{
+    padding-left: 19px;
+
+}
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple, 
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.select2-results__option {
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    color: #4F4F4F;
+    font-size: 15px;
+    font-weight: 400;
+}
+.select2-container--open .select2-dropdown--above {
+    box-shadow: 0px 6px 32px rgb(0 0 0 / 10%);
+    border-radius: 0px;
+    border: none;
+    top: 8px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.select2-container--open .select2-dropdown--below{
+    box-shadow: 0px 2px 18px rgb(0 0 0 / 16%);
+    border-radius: 0px;
+    border: none;
+    top: -8px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.select2Part.w-100 > .select2-container{    
+    width: 100% !important;
+}
+.select2-search--dropdown{
+    padding: 12px 15px;
+    position: relative;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field{
+    font-size: 14px;
+    border: 1px solid #DFE3E7;
+    border-radius: 4px;
+    color: #757575;
+    padding: 10px 15px;
+    background-color: #fff;
+    position: relative;
+    padding-right: 45px;
+}
+.select2-container--default .select2-search--dropdown:after{
+    content: "\f002";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 23px;
+    right: 30px;
+    font-size: 15px;
+    color: rgba(0,0,0,0.54);
+}
+.select2-container--default .select2-selection--multiple{
+    background-color: #fff;
+    border: 1px solid #DFE3E7;
+    min-height: 50px;
+    border-radius: 6px;
+    position: relative;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    border: 1px solid #5A8DEE;
+    background-color: #fff;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered{
+    color: #757575;
+    line-height: 55px;
+    padding-right: 40px;
+    display: block;
+    height: 100%;
+    padding-bottom: 7px;
+    padding-top: 17px;
+    padding-left: 17px;
+    transition: 240ms;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__arrow {
+    height: 48px;
+    right: 15px;
+}
+.select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field{
+    line-height: initial;
+    padding: 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered:before {
+    border: none;
+    content: '';
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9Ii00NzMgMjc3IDEyIDgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTQ3MyAyNzcgMTIgODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6IzhBOTNBNjt9DQo8L3N0eWxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTS00NzEuNiwyNzcuM2w0LjYsNC42bDQuNi00LjZsMS40LDEuNGwtNiw2bC02LTZMLTQ3MS42LDI3Ny4zeiIvPg0KPC9zdmc+DQo=') no-repeat 0 0;
+    width: 12px;
+    height: 8px;
+    background-size: 100% 100%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 18px;
+    top: 26px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+    list-style: none;
+    line-height: initial;
+    padding: 5px;
+    font-size: 14px;
+    position: relative;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+        background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    cursor: default;
+    float: left;
+    color: #1f1f1f;
+    margin-right: 5px;
+    margin-top: 5px;
+    width: initial !important;
+    padding: 5px 10px;
+    padding-right: 24px !important;
+    font-size: 13px !important;
+    letter-spacing: 0.3px;
+}
+.select2-container--default .select2-search--inline .select2-search__field{
+    width: 100% !important;
+    font-size: 16px;
+    margin-top: 0px;
+    padding: 0;
+    padding-left: 5px;
+    line-height: 27px;
+    padding-top: 6px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    position: absolute;
+    font-size: 17px;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    text-align: center;
+    color: #e45555;
+    right: 0px;
+}
+.floating-group.focused .select2-container--default .select2-selection--multiple .select2-selection__rendered{
+    padding-bottom: 7px;
+    padding-top: 17px;
+    padding-left: 17px;
+}
+/* Custom Select Ends */
+.field-wrap #contactnumber + label {left: 45px;}
+.field-wrap input:valid + label, .field-wrap input:focus + label, input:-webkit-autofill + label, .field-wrap #contactnumber:valid + label, .field-wrap #contactnumber:focus + label, .field-wrap #contactnumber:-webkit-autofill + label {font-size: 12px; left: 15px; top: -5px;}
+  .field-wrap .wrapper-dropdown label {left: 57px; top: 15px;}
+  .field-wrap .wrapper-dropdown label.active {font-size: 10px; top: 5px;}
+.inputContact::before {color: rgba(255,255,255,0.3); content: '+91'; font-family: 'Lato'; left: 15px; position: absolute; top: 20px;}
 
 .faqs {padding: 64px 0;}
 .faqs .accordionWrap h5 {border-top: .5px solid rgba(255, 255, 255, .3); color: #fff; font-family: "Lato", sans-serif; font-size: 18px; font-weight: 400; line-height: 1.2em; padding: 30px 40px 30px 0; position: relative;}
@@ -110,10 +396,12 @@ header img {width: 100%;}
 
 
 @media only screen and (max-width:1024px){
-    .getInTouchForm .fields-row {flex-wrap: wrap; gap: 0; justify-content: space-between;}
+    .getInTouchForm .fields-row {flex-wrap: wrap; justify-content: space-between; width: 100%;}
+    .getInTouchForm .field-wrap.select2Part {width: 100%;}
     .getInTouchForm .field-wrap {padding-bottom: 10px; width: 48%;}
 }
 @media only screen and (max-width:1023px){
+    .heroBanner, .heroVideoBanner {max-height: max-content;}
     .bannerSwiper .content {bottom: 70px;}
     .bannerSwiper .content p {font-size: 36px;}
     .bannerSwiper .swiper-pagination-progressbar.swiper-pagination-horizontal {bottom: 32px; left: 20px;}
@@ -132,11 +420,11 @@ header img {width: 100%;}
     .heroBanner .content h2, .promoBanner .content h2 {font-size: 20px; padding-bottom: 15px;}
     .heroBanner .content p, .promoBanner .content p {font-size: 10px;}
     .heroBanner video{height: 650px; left: 50%; position: relative; transform: translateX(-50%); width: auto;}
-    .heroBanner .swiper-pagination-progressbar.swiper-pagination-horizontal {bottom: 32px; left: 20px;}
-    .heroBanner .swiper-button-wrap {bottom: 24px; height: 28px; right: 20px; width: 80px;}
+    .heroBanner .swiper-pagination-progressbar.swiper-pagination-horizontal, .heroVideoBanner .swiper-pagination-progressbar.swiper-pagination-horizontal {bottom: 32px; left: 20px;}
+    .heroBanner .swiper-button-wrap, .heroVideoBanner .swiper-button-wrap {bottom: 24px; height: 28px; right: 20px; width: 80px;}
 
-    .heroBanner .swiper-button-wrap .swiper-button-prev, .heroBanner .swiper-button-wrap .swiper-button-next, .heroBanner .swiper-button-wrap .swiper-button-prev::after, .heroBanner .swiper-button-wrap .swiper-button-next::after {height: 28px; width: 28px;}
-    .heroBanner .swiper-button-wrap .swiper-button-prev::after, .heroBanner .swiper-button-wrap .swiper-button-next::after {background-size: 100%;}
+    .heroBanner .swiper-button-wrap .swiper-button-prev, .heroBanner .swiper-button-wrap .swiper-button-next, .heroBanner .swiper-button-wrap .swiper-button-prev::after, .heroBanner .swiper-button-wrap .swiper-button-next::after, .heroVideoBanner .swiper-button-wrap .swiper-button-prev, .heroVideoBanner .swiper-button-wrap .swiper-button-next, .heroVideoBanner .swiper-button-wrap .swiper-button-prev::after, .heroVideoBanner .swiper-button-wrap .swiper-button-next::after {height: 28px; width: 28px;}
+    .heroBanner .swiper-button-wrap .swiper-button-prev::after, .heroBanner .swiper-button-wrap .swiper-button-next::after, .heroVideoBanner .swiper-button-wrap .swiper-button-prev::after, .heroVideoBanner .swiper-button-wrap .swiper-button-next::after {background-size: 100%;}
 
     .bannerSwiper .content p {font-size: 28px;}
     .details ul {gap: 0;}
@@ -159,8 +447,14 @@ header img {width: 100%;}
     .promoBanner .content {bottom: 60px;}
     .getInTouchForm {padding: 60px 0;}
     .getInTouchForm .field-wrap {width: 100%;}
-    .getInTouchForm .field-wrap input {font-size: 14px; margin-bottom: 5px; padding: 16px;}
+    .getInTouchForm .field-wrap input {font-size: 14px; height: 50px; margin-bottom: 5px; padding: 16px;}
+    .select2-container--default .select2-selection--single .select2-selection__rendered, .field-wrap .verify, .field-wrap label, .inputContact::before {font-size: 14px;}
     .getInTouchForm .btn-submit {font-size: 14px; padding: 9px 15px;}
+    .field-wrap label {top: 17px;}
+    .inputContact::before {top: 14px;}
+    .field-wrap .verify {top: 13px;}
+    .select2-container--default .select2-selection--single {height: 50px;}
+    .select2Part.focused .select2-container--default .select2-selection--single .select2-selection__rendered {padding-top: 4px;}
 
     .faqs .accordionWrap h5 {font-size: 16px; padding: 24px 30px 24px 0;}
     .faqs .accordionWrap h5:before {height: 18px; right: 8px; top: 27px;}
