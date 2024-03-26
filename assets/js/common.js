@@ -15,6 +15,19 @@ var swiper = new Swiper(".heroBanner-swiper", {
   },
 });
 
+var swiper = new Swiper(".heroVideoBanner-swiper", {
+  slidesPerView:1,
+  watchSlidesProgress: true,
+  pagination: {
+		el: '.swiper-pagination',
+		type: "progressbar",
+	},
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 var swiper = new Swiper(".highlights-slider", {
   slidesPerView:3.5,
   watchSlidesProgress: true,
@@ -141,6 +154,32 @@ var swiper = new Swiper(".bannerSwiper", {
 // }, true);
 
 $(document).ready(function () {
+  //---- select2 single----
+	$('.customSelect').each(function() {
+		var dropdownParents = $(this).parents('.select2Part')
+		$(this).select2({
+			dropdownParent: dropdownParents,
+			minimumResultsForSearch: -1
+		}).on("select2:open", function (e) { 
+			$(this).parents('.floating-group').addClass('focused');
+		}).on("select2:close", function (e) {
+			if($(this).find(':selected').val() === ''){
+				$(this).parents('.floating-group').removeClass('focused');
+			}
+		});
+	});
+
+  $('.floating-control').on('change', function (e) {
+    if($(this).is('select')){
+      if($(this).val() === $("option:first", $(this)).val()) {
+        $(this).parents('.floating-group').removeClass('focused');
+      }
+      else{
+        $(this).parents('.floating-group').addClass('focused');
+      }
+    }
+  })
+
   $(document).on('click','.btn-show-more.show', function(){
       $(this).removeClass("show").addClass('less');
       $(this).text('Show less').prev('.hidden-content').addClass('show-content');
@@ -186,26 +225,34 @@ $(document).ready(function () {
 
     // Validate each field
     var isValid = true;
-    var name = $("#fullname").val();
-    if (name === "") {
-      $("#fullname").next('.errorMsg').fadeIn();
+    var firstname = $("#firstname").val();
+    if (firstname === "") {
+      $("#firstname").parents('.field-wrap').find('.errorMsg').fadeIn();
       isValid = false;
     }
-    else if (name != "") {
-      $("#fullname").next('.errorMsg').hide();
+    else if (firstname != "") {
+      $("#firstname").parents('.field-wrap').find('.errorMsg').hide();
+    }
+    var lastname = $("#lastname").val();
+    if (lastname === "") {
+      $("#lastname").parents('.field-wrap').find('.errorMsg').fadeIn();
+      isValid = false;
+    }
+    else if (lastname != "") {
+      $("#lastname").parents('.field-wrap').find('.errorMsg').hide();
     }
 
     // Email validation
     var email = $("#email").val();
     if (email === "") {
-      $("#email").next('.errorMsg').text("Please enter Email").fadeIn();
+      $("#email").parents('.field-wrap').find('.errorMsg').text("Please enter Email").fadeIn();
       isValid = false;
     } else if (!isValidEmail(email)) {
-      $("#email").next('.errorMsg').text("Invalid Email format").fadeIn();
+      $("#email").parents('.field-wrap').find('.errorMsg').text("Invalid Email format").fadeIn();
       isValid = false;
     }
     else if (email != "" && isValidEmail(email)){
-      $("#email").next('.errorMsg').hide();
+      $("#email").parents('.field-wrap').find('.errorMsg').hide();
     }
 
     // Contact Number validation
