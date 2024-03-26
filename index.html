@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    
+    })(window,document,'script','dataLayer','GTM-KM569LJX');</script>
+    
+    <!-- End Google Tag Manager -->
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -12,11 +25,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wdth,wght@0,112.5,100..900;1,112.5,100..900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.min.css" media="all" />
 <link rel="stylesheet" type="text/css" href="assets/css/aos.css" media="all" />
+<link rel="stylesheet" type="text/css" href="assets/css/select2.min.css" media="all" />
 <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-KM569LJX
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>    
+    <!-- End Google Tag Manager (noscript) -->    
     <header>
         <img src="assets/images/header.png" alt="Header">
     </header>
@@ -52,6 +70,12 @@
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
+            <svg class="animatedArrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+            
         </section>
         <!-- <section class="details">
             <div class="container">
@@ -144,10 +168,29 @@
             </div>
         </section>
         <section class="heroVideoBanner">
-            <video autoplay loop muted playsinline poster>
-                <source src="assets/images/video01.mp4" type="video/mp4">
-                <track kind="descriptions">
-            </video>
+            <div class="heroVideoBanner-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video autoplay loop muted playsinline poster>
+                            <source src="assets/images/video01.mp4" type="video/mp4">
+                            <track kind="descriptions">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video autoplay loop muted playsinline poster>
+                            <source src="assets/images/video01.mp4" type="video/mp4">
+                            <track kind="descriptions">
+                        </video>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-wrap">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            
         </section>
         <section class="highlights">
             <div class="container">
@@ -304,15 +347,24 @@
                 <form>
                     <div class="fields-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                         <div class="field-wrap">
-                            <input type="text" id="fullname" placeholder="Full Name *">
-                            <span class="errorMsg">Please enter Full Name</span>
+                            <input type="text" id="firstname" placeholder="" required>
+                            <label for="firstname">First Name *</label>
+                            <span class="errorMsg">Please enter First Name</span>
                         </div>
                         <div class="field-wrap">
-                            <input type="text" id="email" placeholder="Email *">
+                            <input type="text" id="lastname" placeholder="" required>
+                            <label for="lastname">Last Name *</label>
+                            <span class="errorMsg">Please enter Last Name</span>
+                        </div>
+                        <div class="field-wrap">
+                            <input type="text" id="email" placeholder="" required>
+                            <label for="email">Email *</label>
                             <span class="errorMsg">Please enter Email</span>
                         </div>
-                        <div class="field-wrap">
-                            <input type="text" id="contactnumber" placeholder="Contact Number *">
+                        <div class="field-wrap inputContact">
+                            <input type="text" id="contactnumber" placeholder="" required>
+                            <label for="contactnumber">Contact Number *</label>
+                            <a href="javascript:;" class="verify">Verify</a>
                             <span class="txt">We will be creating an account with theses details.</span>
                             <span class="errorMsg">Please enter Contact Number</span>
                         </div>
@@ -320,6 +372,14 @@
                             <input type="text" id="otp" placeholder="OTP *">
                             <span class="errorMsg">Please enter OTP</span>
                         </div> -->
+                        <div class="field-wrap floating-group floating-diff select2Part focused">
+                            <label class="floating-label">I would like to</label>
+                            <select id="liketo" name="liketo" class="form-control floating-control customSelect">
+                                <option value="">I would like to</option>   
+                                <option value="option1" selected>Buy the vehicle (We will contact you at an appropriate time)</option>
+                                <option value="option2">Staye updated (We will share latest info from time to time)</option>
+                            </select>
+                        </div>
                     </div>
                     <button class="btn-submit" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000"><span class="arrow-btn">Submit</span></button>
                 </form>
@@ -399,6 +459,7 @@
     <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/aos.js"></script>
+    <script type="text/javascript" src="assets/js/select2.full.min.js"></script>
     <script type="text/javascript" src="assets/js/common.js"></script>
 
 </body>
