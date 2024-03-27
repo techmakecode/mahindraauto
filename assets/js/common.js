@@ -3,6 +3,7 @@ AOS.init({
     duration: 500,
 })
 var swiper = new Swiper(".heroBanner-swiper", {
+  autoHeight: true,
   slidesPerView:1,
   watchSlidesProgress: true,
   pagination: {
