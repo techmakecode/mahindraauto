@@ -5,7 +5,9 @@ header img {width: 100%;}
 .heroBanner img, .promoBanner img, .heroVideoBanner video {width: 100%;}
 .heroBanner .content, .promoBanner .content {left: 0; position: absolute; text-align: center; top: 25%; width: 100%;}
 .heroBanner .swiper-pagination-progressbar.swiper-pagination-horizontal, .heroVideoBanner .swiper-pagination-progressbar.swiper-pagination-horizontal {bottom: 64px; left: 4.686%;}
+.heroVideoBanner .swiper-pagination-progressbar.swiper-pagination-horizontal {left: 9.372%;}
 .heroBanner .swiper-button-wrap, .heroVideoBanner .swiper-button-wrap {bottom: 50px; height: 40px; position: absolute; right: 4.686%; width: 120px;}
+.heroVideoBanner .swiper-button-wrap {right: 9.372%;}
 .heroBanner .swiper-button-wrap .swiper-button-prev, .heroBanner .swiper-button-wrap .swiper-button-next, .heroVideoBanner .swiper-button-wrap .swiper-button-prev, .heroVideoBanner .swiper-button-wrap .swiper-button-next {height: 40px; margin: 0; top: 0; width: 40px;}
 .heroBanner .swiper-button-wrap .swiper-button-prev, .heroVideoBanner .swiper-button-wrap .swiper-button-prev {left: 0;}
 .heroBanner .swiper-button-wrap .swiper-button-next, .heroVideoBanner .swiper-button-wrap .swiper-button-next {right: 0;}
@@ -63,7 +65,7 @@ header img {width: 100%;}
     -webkit-animation-delay:0s; /* Safari 和 Chrome */
   }
 
-
+.promoBanner {display: none;}
 .promoBanner .content {bottom: 100px; top: auto;}
 .heroBanner .content h2, .promoBanner .content h2 {color: #fff; font-size: 38px; font-weight: 700; line-height: 1.2em; padding-bottom: 20px;}
 .heroBanner .content p, .promoBanner .content p {color: rgba(255, 255, 255, .7); font-size: 14px; font-weight: 600; letter-spacing: 5px; line-height: 1.2em;}
@@ -80,7 +82,7 @@ header img {width: 100%;}
 .info {padding: 132px 0;}
 .info .heading {color: #fff; display: block; font-size: 14px; font-weight: 600; letter-spacing: 5px; line-height: 1.2em; padding-bottom: 20px;}
 .info h2 {color: #fff; font-family: "Lato", sans-serif; font-size: 48px; font-weight: 300; line-height: 1.2em; padding-bottom: 25px;}
-.info p {color: rgba(255, 255, 255, .7); font-family: "Lato", sans-serif; font-size: 14px; font-weight: 300; line-height: 1.7em;}
+.info p {color: rgba(255, 255, 255, .7); font-family: "Lato", sans-serif; font-size: 16px; font-weight: 300; line-height: 1.7em;}
 .heroVideoBanner {overflow-x: hidden;}
 .bannerSwiper {overflow-x: hidden;}
 .bannerSwiper img {width: 100%;}
@@ -102,12 +104,13 @@ header img {width: 100%;}
 .bannerSwiper .swiper-button-wrap .swiper-button-next::after {background: url('../images/arrow-next.png') 0 0 no-repeat;}
 .bannerSwiper .swiper-button-wrap .swiper-button-prev::after, .bannerSwiper .swiper-button-wrap .swiper-button-next::after {background-size: 100%;}
 
+.highlights {display: none;}
 .highlights, .unmissablePresence {overflow-x: hidden; padding: 50px 0;}
 .highlights-slider, .unmissablePresence-slider {position: relative;}
 .highlights h3, .unmissablePresence h3, .getInTouchForm h3, .faqs h3 {color: #fff; font-size: 24px; font-weight: 700; line-height: 1.2em; padding-bottom: 25px;}
 .highlights .content, .unmissablePresence .content {padding: 24px 0;}
 .highlights .content h4 {color: #fff; font-family: "Lato", sans-serif; font-size: 24px; font-weight: 400; letter-spacing: -1px; line-height: 1.2em; padding-bottom: 8px;}
-.highlights .content p {color: rgba(255, 255, 255, .7); font-family: "Lato", sans-serif; font-size: 14px; font-weight: 300; line-height: 1.7em;}
+.highlights .content p {color: rgba(255, 255, 255, .7); font-family: "Lato", sans-serif; font-size: 16px; font-weight: 300; line-height: 1.7em;}
 .highlights .content .hidden-content {display: none;}
 .highlights .content .hidden-content.show-content {display: inline;}
 .highlights .content .btn-show-more {color: rgba(255, 255, 255, .7); font-weight: 600; text-decoration: none; position: relative;}
@@ -159,6 +162,7 @@ header img {width: 100%;}
 .select2Part.focused .select2-container--default .select2-selection--single .select2-selection__rendered{
     padding-top: 10px;
 }
+.showPlaceholder .select2-container--default .select2-selection--single .select2-selection__rendered {color: rgba(255, 255, 255, .6);}
 .select2-container--default .select2-selection--single{
     background-color: #101014;
     border: 1px solid #7b7b7b;
@@ -408,6 +412,7 @@ header img {width: 100%;}
     .bannerSwiper .swiper-button-wrap {bottom: 16px; height: 28px; right: 20px; width: 80px;}
     .bannerSwiper .swiper-button-wrap .swiper-button-prev, .bannerSwiper .swiper-button-wrap .swiper-button-next, .bannerSwiper .swiper-button-wrap .swiper-button-prev::after, .bannerSwiper .swiper-button-wrap .swiper-button-next::after {height: 28px; width: 28px;}
     .bannerSwiper .swiper-button-wrap .swiper-button-prev::after, .bannerSwiper .swiper-button-wrap .swiper-button-next::after {background-size: 100%;}
+    .heroVideoBanner .container {margin: 0 auto; overflow: hidden; padding: 0; width: 90.628%;}
     .heroVideoBanner video{height: 500px; left: 50%; position: relative; transform: translateX(-50%); width: auto;}
     .bannerSwiper .content p span:first-child {margin-left: 50px;}
     .bannerSwiper .content p span {margin-right: 50px;}
