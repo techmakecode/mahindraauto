@@ -1,6 +1,6 @@
 header {left: 0; padding: 15px; position: absolute; top: 0; width: 100%; z-index: 2;}
 header img {width: 100%;}
-.heroBanner, .heroVideoBanner {max-height: 90vh; overflow-x: hidden;}
+.heroBanner, .heroVideoBanner {max-height: 90vh; overflow: hidden;}
 .heroBanner .swiper-slide, .heroVideoBanner .swiper-slide {overflow-x: hidden;}
 .heroBanner img, .promoBanner img, .heroVideoBanner video {width: 100%;}
 .heroBanner .content, .promoBanner .content {left: 0; position: absolute; text-align: center; top: 25%; width: 100%;}
