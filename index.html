@@ -171,17 +171,21 @@
             <div class="heroVideoBanner-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <video autoplay loop muted playsinline poster>
-                            <source src="assets/images/video01.mp4" type="video/mp4">
-                            <track kind="descriptions">
-                        </video>
+                        <div class="container">
+                            <video autoplay loop muted playsinline poster>
+                                <source src="assets/images/video01.mp4" type="video/mp4">
+                                <track kind="descriptions">
+                            </video>
+                        </div>
                     </div>
-                    <!-- <div class="swiper-slide">
-                        <video autoplay loop muted playsinline poster>
-                            <source src="assets/images/video01.mp4" type="video/mp4">
-                            <track kind="descriptions">
-                        </video>
-                    </div> -->
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <video autoplay loop muted playsinline poster>
+                                <source src="assets/images/video01.mp4" type="video/mp4">
+                                <track kind="descriptions">
+                            </video>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-wrap">
@@ -372,11 +376,11 @@
                             <input type="text" id="otp" placeholder="OTP *">
                             <span class="errorMsg">Please enter OTP</span>
                         </div> -->
-                        <div class="field-wrap floating-group floating-diff select2Part focused">
+                        <div class="field-wrap floating-group floating-diff select2Part showPlaceholder">
                             <label class="floating-label">I would like to</label>
                             <select id="liketo" name="liketo" class="form-control floating-control customSelect">
                                 <option value="">I would like to</option>   
-                                <option value="option1" selected>Buy the vehicle (We will contact you at an appropriate time)</option>
+                                <option value="option1">Buy the vehicle (We will contact you at an appropriate time)</option>
                                 <option value="option2">Staye updated (We will share latest info from time to time)</option>
                             </select>
                         </div>
