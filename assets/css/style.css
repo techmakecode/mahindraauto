@@ -89,10 +89,10 @@ header img {width: 100%;}
 .bannerSwiper .content {bottom: 50px; left: 0; position: absolute; width: 100%;}
 .bannerSwiper .content p {color: #fff; font-family: "Lato", sans-serif; font-size: 48px; font-weight: 300; line-height: 1.1em; text-align: center;}
 .bannerSwiper .content p span {display: block; margin-right: 100px; transition: all 1s ease-in-out;}
-.bannerSwiper .content p span:first-child {margin-left: 100px; margin-right: auto;}
+.bannerSwiper .content p:first-child span {margin-left: 100px; margin-right: auto;}
 
-.bannerSwiper .swiper-slide-active .content p span {margin-right: -100px}
-.bannerSwiper .swiper-slide-active .content p span:first-child {margin-left: -100px;}
+.bannerSwiper .swiper-slide-active .content p span {margin-left: auto; margin-right: -100px}
+.bannerSwiper .swiper-slide-active .content p:first-child span {margin-left: -100px; margin-right: auto;}
 
 .bannerSwiper .swiper-pagination-progressbar.swiper-pagination-horizontal {bottom: 64px; left: 4.686%; top: auto;}
 .bannerSwiper .swiper-button-wrap {bottom: 50px; height: 40px; position: absolute; right: 4.686%; width: 120px;}
