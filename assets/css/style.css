@@ -1,8 +1,8 @@
 header {left: 0; padding: 15px; position: absolute; top: 0; width: 100%; z-index: 2;}
 header img {width: 100%;}
-.heroBanner, .heroVideoBanner {/*max-height: 90vh;*/ overflow: hidden;}
+.heroBanner, .heroVideoBanner {max-height: 100vh; overflow: hidden;}
 .heroBanner .swiper-slide, .heroVideoBanner .swiper-slide {overflow-x: hidden;}
-.heroBanner img, .promoBanner img, .heroVideoBanner video {width: 100%;}
+.heroBanner img, .promoBanner img, .heroVideoBanner video {object-fit: cover; width: 100%;}
 .heroBanner .content, .promoBanner .content {left: 0; position: absolute; text-align: center; top: 25%; width: 100%;}
 .heroBanner .swiper-pagination-progressbar.swiper-pagination-horizontal, .heroVideoBanner .swiper-pagination-progressbar.swiper-pagination-horizontal {bottom: 64px; left: 4.686%;}
 .heroVideoBanner .swiper-pagination-progressbar.swiper-pagination-horizontal {left: 9.372%;}
@@ -86,7 +86,7 @@ header img {width: 100%;}
 .info p {color: rgba(255, 255, 255, .7); font-family: "Lato", sans-serif; font-size: 18px; font-weight: 300; line-height: 1.7em;}
 .heroVideoBanner {overflow-x: hidden;}
 .bannerSwiper {overflow-x: hidden;}
-.bannerSwiper img {width: 100%;}
+.bannerSwiper img {object-fit: cover; max-height: 100vh; width: 100%;}
 .bannerSwiper .content {bottom: 50px; left: 0; position: absolute; width: 100%;}
 .bannerSwiper .content p {color: #fff; font-family: "Lato", sans-serif; font-size: 48px; font-weight: 300; line-height: 1.1em; text-align: center;}
 .bannerSwiper .content p span {display: block; margin-right: 100px; transition: all 1s ease-in-out;}
