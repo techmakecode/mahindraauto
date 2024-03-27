@@ -172,10 +172,10 @@ $(document).ready(function () {
   $('.floating-control').on('change', function (e) {
     if($(this).is('select')){
       if($(this).val() === $("option:first", $(this)).val()) {
-        $(this).parents('.floating-group').removeClass('focused');
+        $(this).parents('.floating-group').removeClass('focused').addClass('showPlaceholder');
       }
       else{
-        $(this).parents('.floating-group').addClass('focused');
+        $(this).parents('.floating-group').addClass('focused').removeClass('showPlaceholder');
       }
     }
   })
