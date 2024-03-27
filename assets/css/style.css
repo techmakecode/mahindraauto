@@ -412,7 +412,7 @@ header img {width: 100%;}
     .bannerSwiper .swiper-button-wrap {bottom: 16px; height: 28px; right: 20px; width: 80px;}
     .bannerSwiper .swiper-button-wrap .swiper-button-prev, .bannerSwiper .swiper-button-wrap .swiper-button-next, .bannerSwiper .swiper-button-wrap .swiper-button-prev::after, .bannerSwiper .swiper-button-wrap .swiper-button-next::after {height: 28px; width: 28px;}
     .bannerSwiper .swiper-button-wrap .swiper-button-prev::after, .bannerSwiper .swiper-button-wrap .swiper-button-next::after {background-size: 100%;}
-    .heroVideoBanner .container {margin: 0 auto; overflow: hidden; padding: 0; width: 90.628%;}
+    /* .heroVideoBanner .container {margin: 0 auto; overflow: hidden; padding: 0; width: 90.628%;} */
     .heroVideoBanner video{height: 500px; left: 50%; position: relative; transform: translateX(-50%); width: auto;}
     .bannerSwiper .content p span:first-child {margin-left: 50px;}
     .bannerSwiper .content p span {margin-right: 50px;}
