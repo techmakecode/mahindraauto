@@ -28,7 +28,7 @@
     left: 0;
     position: absolute;
     text-align: center;
-    top: 25%;
+    top: 20%;
     width: 100%;
 }
 
@@ -1212,6 +1212,15 @@
     }
 }
 
+
+@media only screen and (max-width:980px) {
+    .heroBanner .content, .promoBanner .content {
+        top: 15%;
+    }
+}
+
+
+
 @media only screen and (max-width:767px) {
     header {
         padding: 10px;
@@ -1222,8 +1231,8 @@
     }
 
     .heroBanner .content h2, .promoBanner .content h2 {
-        font-size: 30px;
-        padding-bottom: 15px;
+        font-size: 24px;
+        padding-bottom: 12px;
     }
 
     .heroBanner .content p, .promoBanner .content p {
@@ -1415,7 +1424,14 @@
         margin-top: 45px;
         padding: 9px 15px;
     }
+
 }
+@media only screen and (max-width:600px) {
+    .heroBanner .content, .promoBanner .content {
+        top: 12%;
+    }
+}
+
 
 
 /* Header CSS */
@@ -1472,7 +1488,7 @@
 }
 
 .fc-navbar .fc-logo {
-    height: 75px;
+    height: 70px;
 }
 
 .fc-navbar .fc-logo img {
