@@ -67,6 +67,18 @@ $(document).ready(function () {
 		});
 	});
 
+  $(document).on('click','.videoBanner', function(){
+    if($(this).hasClass('videoPaused'))
+    {
+      $(this).removeClass('videoPaused');
+      $(this).find('video').get(0).play();
+    }
+    else {
+      $(this).addClass('videoPaused');
+      $(this).find('video').get(0).pause();
+    }
+  });
+
   $('.floating-control').on('change', function (e) {
     if($(this).is('select')){
       if($(this).val() === $("option:first", $(this)).val()) {
