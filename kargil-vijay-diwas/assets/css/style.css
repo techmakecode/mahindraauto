@@ -33,7 +33,7 @@ h3 {
 
 .videoBanner {position: relative;}
 .videoPaused:after {background: url('../images/btn-play.png') 0 0 no-repeat; content: ''; height: 34px; left: 50%; position: absolute; top: 50%; transform: translate(-50%, -50%); width: 34px;}
-.socialWall {background: url('../images/social-wall.png') 0 0 no-repeat; background-size: cover; padding: 50px 0;}
+.socialWall {background: url('../images/social-wall.png') 0 0 no-repeat; background-size: cover; overflow: hidden; padding: 50px 0;}
 .socialWall .swiper-slide {align-items: center; display: flex; flex-direction: column; height: auto; justify-content: flex-end;}
 .socialWall .socialPopup {background-color: #fff; border-radius: 10px; margin-bottom: 60px; max-width: 320px; padding: 10px; position: relative;}
 .socialWall .socialPopup iframe {min-width: 100% !important;}
@@ -105,7 +105,7 @@ h3 {
     font-weight: 300;
     line-height: 1.7em;
 }
-
+.faqs .accordionWrap p a {color: #fff;}
 .faqs .accordionWrap .hidden-faqs {
     display: none;
 }
