@@ -31,6 +31,8 @@ h3 {
 .participationBox .content {margin: 0 auto; max-width: 950px;}
 .participationBox .content .imgBox {flex-shrink: 0; padding-right: 20px;}
 
+.videoBanner {position: relative;}
+.videoPaused:after {background: url('../images/btn-play.png') 0 0 no-repeat; content: ''; height: 34px; left: 50%; position: absolute; top: 50%; transform: translate(-50%, -50%); width: 34px;}
 .socialWall {background: url('../images/social-wall.png') 0 0 no-repeat; background-size: cover; padding: 50px 0;}
 .socialWall .swiper-slide {align-items: center; display: flex; flex-direction: column; height: auto; justify-content: flex-end;}
 .socialWall .socialPopup {background-color: #fff; border-radius: 10px; margin-bottom: 60px; max-width: 320px; padding: 10px; position: relative;}
@@ -134,7 +136,7 @@ h3 {
 .socialLinks ul {display: flex; justify-content: center;}
 .socialLinks li {padding: 0 5px;}
 @media only screen and (max-width:1200px) {
-    
+    h3 {font-size: 32px;}
 }
 @media only screen and (max-width:1024px) {
    
