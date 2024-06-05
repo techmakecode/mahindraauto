@@ -1,10 +1,8 @@
 
 
-var swiperkeyHighlights = new Swiper(".keyHighlights-slider", {
-  watchSlidesProgress: true,
+var swipersocialwall = new Swiper(".socialWall-swiper", {
+  //watchSlidesProgress: true,
   loop:true,
-  //allowTouchMove:false,
-  //slideToClickedSlide:true,
   autoplay: {
 		enabled: true,
 		delay: 3000,
@@ -12,31 +10,26 @@ var swiperkeyHighlights = new Swiper(".keyHighlights-slider", {
 	},
 	centeredSlides: false,
 	navigation: false,
-	spaceBetween: 15,
 	speed: 1800,
   breakpoints: {
     0: {
         spaceBetween: 18,
-        slidesPerView: 1.2,
+        slidesPerView: 1,
     },
     767: {
-        spaceBetween: 18,
         slidesPerView: 1.8,
     },
     1024: {
-        spaceBetween: 24,
         slidesPerView: 2.5,
     },
     1280: {
-        spaceBetween: 24,
-        slidesPerView: 4.1,
-        //loop:false,
+        slidesPerView: 3
     }
   },
 });
 document.addEventListener('mouseenter', event => {
 	const el = event.target;
-	if (el && el.matches && el.matches('.keyHighlights-slider')) {
+	if (el && el.matches && el.matches('.socialWall-swiper')) {
 		el.swiper.autoplay.stop();
 		el.classList.add('swiper-paused');
 	}
@@ -44,7 +37,7 @@ document.addEventListener('mouseenter', event => {
 
 document.addEventListener('mouseleave', event => {
 	const el = event.target;
-	if (el && el.matches && el.matches('.keyHighlights-slider')) {
+	if (el && el.matches && el.matches('.socialWall-swiper')) {
 		el.swiper.autoplay.start();
 		el.classList.remove('swiper-paused');
 	}
